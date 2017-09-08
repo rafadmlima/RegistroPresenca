@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Ponto</string>
+    <string name="hintName">Nome de Usuário</string>
+    <string name="hintPasswd">Senha</string>
+    <string name="btnEntrar">Entrar</string>
+    <string name="title_activity_login">Tela de Acesso</string>
+    <string name="title_activity_registro">Tela de Registro</string>
+    <string name="lblNomeUser">Nome Usuário</string>
+    <string name="title_activity_mapa">Map</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_func">FuncActivity</string>
+    <string name="hintCode">Código</string>
+    <string name="btnCadastrar">Cadastrar</string>
+</resources>

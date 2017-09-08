@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rafael.registropresenca.view.ConsultaActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Código de barras"
+            android:textSize="32sp"
+        />
+
+        <EditText
+            android:id="@+id/txtCodBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Digitar aqui o codigo de barras."
+            android:inputType="number"
+            android:maxLength="13"
+        />
+
+        <Button
+            android:id="@+id/btnBuscarCodigo"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:onClick="buscarPreco"
+            android:text="Buscar Preço"
+        />
+
+        <TextView
+            android:id="@+id/lblDescricaoProduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:text="produto"
+            android:textSize="23sp"
+        />
+
+        <TextView
+            android:id="@+id/lblPrecoProduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:text="R$ 0.00"
+            android:textColor="@color/vermelho"
+            android:textSize="60sp"
+            android:textStyle="bold"
+        />
+
+        <Button
+            android:id="@+id/btnAbrirEscanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="abrirEscanner"
+            android:text="Escanear usando leitor"
+        />
+
+    </LinearLayout>
+</ScrollView>
