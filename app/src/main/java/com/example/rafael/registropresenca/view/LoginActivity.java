@@ -113,14 +113,10 @@ public class LoginActivity extends AppCompatActivity {
             if(result){
                 mensagem.toast("OK");
             }else{
-                mensagem.toast("NAO CADASTRADO");
+                mensagem.alertDialog(this, "VOCÊ NÃO É CADASTRADO.\nENVIE UM EMAIL SOLICITANDO AUTORIZAÇÃO.");
                 btnCadastrar.setVisibility(View.VISIBLE);
                 btnEntrar.setEnabled(false);
             }
-
-
-
-
 
 //            rowid = UControl.inserir(txtCodigo.getText().toString(), txtNome.getText().toString());
 //            if(rowid > 0){
@@ -138,7 +134,6 @@ public class LoginActivity extends AppCompatActivity {
     public void cadastrar(View view) {
         if(mensagem == null){
             mensagem = new Mensagem(this);
-
         }
         mensagem.toast("Cadastrando...");
         btnCadastrar.setEnabled(false);
