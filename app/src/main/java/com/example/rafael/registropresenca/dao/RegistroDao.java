@@ -21,11 +21,25 @@ public class RegistroDao {
     private SQLiteDatabase db;
     private DBHelper helper;
     Cursor cursor;
+    private String sql =    "CREATE TABLE IF NOT EXISTS REGISTRO ( " +
+            "_id               INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, " +
+            "EMPRESA           VARCHAR(14)," +
+            "COLABORADOR       VARCHAR(11), " +
+            "DATA              VARCHAR(10)," +
+            "DATA_REUNIAO      VARCHAR(10)," +
+            "OPERACAO          VARCHAR(1)," +
+            "MOTIVO            VARCHAR (255), " +
+            "HORARIO           VARCHAR(8)," +
+            "STATUS            VARCHAR(1), " +
+            "TRABALHADO        VARCHAR(8)," +
+            "COORDENADAS       VARCHAR(20)," +
+            "TT_TRABALHADO     VARCHAR(8)," +
+            "); ";
 
     //instancia um objeto da classe DBHelper no construtor
     public RegistroDao(Context contexto){
         dao = new RegistroDao();
-        helper = new DBHelper(contexto, "", "");
+        helper = new DBHelper(contexto, sql, "registro");
     }
     public RegistroDao() {
 
@@ -36,7 +50,7 @@ public class RegistroDao {
         long rowid = 0;
 
         ContentValues valores = new ContentValues();
-        valores.put("id", 1);
+        //valores.put("id", 1);
         valores.put("empresa", registro.getEmpresa());
         valores.put("colaborador", registro.getColaborador());
         valores.put("data",registro.getData());
