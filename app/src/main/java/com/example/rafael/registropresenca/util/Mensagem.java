@@ -27,7 +27,7 @@ public class Mensagem {
         Toast.makeText(contexto, mensagem, Toast.LENGTH_LONG).show();
     }
 
-    public ProgressDialog dialog(String titulo, String mensagem){
+    public ProgressDialog  dialog(String titulo, String mensagem){
         this.dialog = new ProgressDialog(this.contexto);
         this.dialog.setTitle(titulo);
         this.dialog.setMessage(mensagem);
@@ -36,28 +36,33 @@ public class Mensagem {
     }
 
     public void alertDialog(Context contexto, String mensagem){
-        android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(contexto);
+        AlertDialog.Builder builder = new AlertDialog.Builder(contexto);
 
         //Titulo da janela
-        builder.setTitle("Opções de Imagem do Perfil");
+        builder.setTitle("Primeiro Acesso");
         //Conteudo da msg
-        builder.setMessage("Para adicionar uma imagem no seu perfil\n basta escolher uma das opções abaixo!");
-
-        builder.setPositiveButton("Ok",botaoOk());
-        builder.setNegativeButton("Cancelar",botaoCancelar());
+        builder.setIcon(R.mipmap.ic_launcher_round)
+                .setMessage(mensagem)
+                .setPositiveButton("Ok",new DialogInterface.OnClickListener(){
+                    @Override
+                    public void onClick(DialogInterface dialog, int wich){
+                        toast("OK");
+                    }
+                })
+                .setNegativeButton("CANCELAR",new DialogInterface.OnClickListener(){
+                    @Override
+                    public void onClick(DialogInterface dialog, int wich){
+                        toast("CANCELAR");
+                    }
+                })
+                .setCancelable(false);
 
         //cria o alertDialog a partir do builder
-        android.app.AlertDialog alert = builder.create();
+        AlertDialog alert = builder.create();
         alert.show();
         }
 
-    private DialogInterface.OnClickListener botaoCancelar() {
-        return null;
-    }
-
-    private DialogInterface.OnClickListener botaoOk() {
-        return null;
-    }
-}
 
 }
+
+

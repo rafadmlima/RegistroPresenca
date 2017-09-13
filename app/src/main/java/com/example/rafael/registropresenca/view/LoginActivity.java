@@ -113,9 +113,9 @@ public class LoginActivity extends AppCompatActivity {
             if(result){
                 mensagem.toast("OK");
             }else{
-                mensagem.alertDialog(this, "VOCÊ NÃO É CADASTRADO.\nENVIE UM EMAIL SOLICITANDO AUTORIZAÇÃO.");
-                btnCadastrar.setVisibility(View.VISIBLE);
-                btnEntrar.setEnabled(false);
+                mensagem.alertDialog(this, "Ops! Você ainda não é cadastrado solicite o seu cadastro enviando um email para: ptessarolli@gmail.com com o titulo #CADASTRO APP TS_SOLUTIONS");
+//                btnCadastrar.setVisibility(View.VISIBLE);
+//                btnEntrar.setEnabled(false);
             }
 
 //            rowid = UControl.inserir(txtCodigo.getText().toString(), txtNome.getText().toString());
