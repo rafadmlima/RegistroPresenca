@@ -41,7 +41,7 @@ public class Mensagem {
         //Titulo da janela
         builder.setTitle("Primeiro Acesso");
         //Conteudo da msg
-        builder.setIcon(R.mipmap.ic_launcher_round)
+        builder.setIcon(R.mipmap.ic_launcher)
                 .setMessage(mensagem)
                 .setPositiveButton("Ok",new DialogInterface.OnClickListener(){
                     @Override
