@@ -54,15 +54,15 @@ public class LoginActivity extends AppCompatActivity {
 //        txtNome.setText("PEDRO TESSAROLLI");
 //
 //        PARA TESTAR TELA DE REGISTRO DE PONTO
-        txtCodigo.setText("86");
-        txtNome.setText("FATIMA");
+//        txtCodigo.setText("86");
+//        txtNome.setText("FATIMA");
 
 //        txtCodigo.setText("84");
 //        txtNome.setText("GIOVANNI");
 //
 //        PARA TESTAR SCANNER
-//        txtCodigo.setText("85");
-//        txtNome.setText("RAFAEL");
+        txtCodigo.setText("85");
+        txtNome.setText("RAFAEL");
 
 
         //PARA TESTAR LEITOR DE PRECO

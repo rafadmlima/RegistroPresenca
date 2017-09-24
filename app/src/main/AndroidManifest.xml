@@ -58,19 +58,23 @@
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
 
-             <!--<intent-filter>-->
-             <!--<action android:name="android.intent.action.MAIN" />-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
 
 
-             <!--<category android:name="android.intent.category.LAUNCHER" />-->
-             <!--</intent-filter>-->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".view.FuncActivity"
             android:label="@string/title_activity_func"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".view.PromoterActivity"/>
-        <activity android:name=".view.ConsultaActivity"></activity>
+        <activity android:name=".view.PromoterActivity" />
+        <activity android:name=".view.ConsultaActivity" />
+        <activity
+            android:name=".view.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

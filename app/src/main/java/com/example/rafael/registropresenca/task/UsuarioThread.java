@@ -20,6 +20,7 @@ import com.example.rafael.registropresenca.util.ListaAdapterRegistro;
 import com.example.rafael.registropresenca.util.RequestHelper;
 import com.example.rafael.registropresenca.view.ConsultaActivity;
 import com.example.rafael.registropresenca.view.FuncActivity;
+import com.example.rafael.registropresenca.view.HomeActivity;
 import com.example.rafael.registropresenca.view.MainActivity;
 import com.example.rafael.registropresenca.view.PromoterActivity;
 import com.example.rafael.registropresenca.view.RegistroActivity;
@@ -460,7 +461,7 @@ public class UsuarioThread extends AsyncTask<String, Void, Boolean> {
 
                     }else if(DadosUsuario.getUsuario().getForma().equals("F1")){
 
-                        Intent intent = new Intent(contexto, ConsultaActivity.class);
+                        Intent intent = new Intent(contexto, HomeActivity.class);
                         intent.putExtra("username",DadosUsuario.getUsuario().getNome());
                         contexto.startActivity(intent);
                     }

@@ -14,7 +14,7 @@ import com.example.rafael.registropresenca.util.Mensagem;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+public class MainActivity extends AppCompatActivity{
     private List<String> nomes = new ArrayList<String>();
     FloatingActionButton fab;
     private String titleScreen = "Tela Administrativa";
@@ -38,21 +38,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
 
-    @Override
-    public boolean onNavigationItemSelected( MenuItem item) {
-        int id = item.getItemId();
 
-        if (id == R.id.nav_first_option){
-            mensagem.toast("Primeira opcao");
-        } else if (id == R.id.nav_second_option){
-            mensagem.toast("Segunda opcao");
-        }else if (id == R.id.nav_third_option){
-            mensagem.toast("Terceira opcao");
-        }else if (id == R.id.nav_exit){
-            mensagem.toast("Voce escolheu sair");
-        }
-
-
-        return false;
-    }
 }
